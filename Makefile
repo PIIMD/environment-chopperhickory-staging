@@ -1,6 +1,6 @@
 CHART_REPO := http://jenkins-x-chartmuseum:8080
 DIR := "env"
-NAMESPACE := "jx-staging"
+NAMESPACE := "jx-priluxstaging"
 OS := $(shell uname)
 
 build: clean
@@ -12,7 +12,7 @@ build: clean
 	helm dependency build ${DIR}
 	helm lint ${DIR}
 
-install: 
+install:
 	helm upgrade ${NAMESPACE} ${DIR} --install --namespace ${NAMESPACE} --debug
 
 delete:
