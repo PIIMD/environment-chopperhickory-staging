@@ -7,7 +7,7 @@ mqttserver:
     MqttJobProcessor_FeatureToggling__UserCreationRejectedEventHandler: true
 priluxwebui:
   env:
-    App__CorsOrigins: https://prilux-vial-ui.jx-staging.dativepartners.eu,https://*.dativepartners.eu,http://*.dativepartners.eu,http://localhost:4200,http://localhost:8080,http://localhost:8081,http://localhost:3000,https://priluxwebuiv2.dev-staging.dativepartners.eu,https://priluxwebui.dev-staging.dativepartners.eu,https://.dativepartners.eu,https://nix.dative.app
+    App__CorsOrigins: https://prilux-vial-ui.jx-staging.prilux.cloud,https://*.prilux.cloud,http://*.prilux.cloud,http://localhost:4200,http://localhost:8080,http://localhost:8081,http://localhost:3000,https://priluxwebuiv2.dev-staging.prilux.cloud,https://priluxwebui.dev-staging.prilux.cloud,https://.prilux.cloud,https://nix.dative.app
   Annotations:
     helm.sh/hook: pre-delete
     helm.sh/hook-delete-policy: hook-succeeded
@@ -21,7 +21,7 @@ expose:
   - --v
   - 4
   config:
-    domain: dativepartners.eu
+    domain: prilux.cloud
     exposer: Ingress
     http: "true"
 jenkins:
