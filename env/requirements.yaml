@@ -12,7 +12,7 @@ dependencies:
   version: 0.0.435
 - name: prilux-vial-ui
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.228
+  version: 0.0.229
 - name: priluxswiftlibrary
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.224
